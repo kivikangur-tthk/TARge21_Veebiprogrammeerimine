@@ -1,6 +1,5 @@
 <pre>
 Ülesanne 0402
-
 Tee tsükliga 20 checkboxi. Pane neile kõigile oma nimi stiilis box[1], box[2], jne.
 Tee tsükliga 20 teksti lahtrit. Pane neile kõigile oma nimi stiilis cell[1], cell[2], jne.
 Tee tsükliga 20 radio buttonit. Pane neile kõigile üks nimi "radio" ja erinevad väärtused stiilis value1, value2 jne.

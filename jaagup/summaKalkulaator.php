@@ -28,7 +28,6 @@ $kaubad["kartul"] = "0.45";
             }
             return $selected;
         }
-
         foreach ($kaubad as $nimetus => $hind) {
             $selected = getSelected($_REQUEST["hind1"], $hind);
             echo "<option value='$hind' $selected>$nimetus</option>";

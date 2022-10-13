@@ -1,6 +1,5 @@
 <pre>
 Ülesanne 0403
-
 Pane massiivi 15 HTML erinevat värvi.
 Leia ilusaid värvi nimesi siit: http://www.w3schools.com/html/html_colornames.asp
 Kuva tsükliga välja värvuste nimed ja värvi need sama värvi nt.
@@ -156,7 +155,6 @@ $colors = array("AliceBlue" => "F0F8FF",
     "WhiteSmoke" => "F5F5F5",
     "Yellow" => "FFFF00",
     "YellowGreen" => "9ACD32");
-
 foreach ($colors as $name => $code) {
     ?>
     <span style='color: <?= $code ?>'><?= $name ?></span>

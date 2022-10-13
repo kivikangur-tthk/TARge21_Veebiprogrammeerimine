@@ -1,13 +1,9 @@
 --== PHP ülesanded 01 ==--
-
 TSÜKLID
-
 
 ================================
 Ülesanne 0101
-
-Järgnevas ülesandes tohib kasutada vaid IF tingimust ja FOR tsükklit. Arvude üleühe kuvamiseks kasutage lisamuutujat. Kuvada ühe FOR tsükkliga välja järgmine arvude jada järgmisel kujul: 
-
+Järgnevas ülesandes tohib kasutada vaid IF tingimust ja FOR tsükklit. Arvude üleühe kuvamiseks kasutage lisamuutujat. Kuvada ühe FOR tsükkliga välja järgmine arvude jada järgmisel kujul:
 1
 3
 5
@@ -19,12 +15,9 @@ Järgnevas ülesandes tohib kasutada vaid IF tingimust ja FOR tsükklit. Arvude üle
 17
 19
 
-
 ================================
 Ülesanne 0102
-
-Järgnevas ülesandes tohib kasutada vaid IF tingimust ja FOR tsükklit. Kuvada ühe FOR tsükkliga välja järgmine arvude jada järgmisel kujul: 
-
+Järgnevas ülesandes tohib kasutada vaid IF tingimust ja FOR tsükklit. Kuvada ühe FOR tsükkliga välja järgmine arvude jada järgmisel kujul:
 -11
 -10
 -9
@@ -43,12 +36,9 @@ Järgnevas ülesandes tohib kasutada vaid IF tingimust ja FOR tsükklit. Kuvada ühe
 9
 10
 
-
 ================================
 Ülesanne 0103
-
-Järgnevas ülesandes tohib kasutada vaid IF tingimust, mooduli võtmist (mod %) ja FOR tsükklit. Kuvada ühe FOR tsükkliga välja järgmine arvude jada järgmisel kujul: 
-
+Järgnevas ülesandes tohib kasutada vaid IF tingimust, mooduli võtmist (mod %) ja FOR tsükklit. Kuvada ühe FOR tsükkliga välja järgmine arvude jada järgmisel kujul:
 100
 200
 300
@@ -60,12 +50,9 @@ Järgnevas ülesandes tohib kasutada vaid IF tingimust, mooduli võtmist (mod %) ja
 900
 1000
 
-
 ================================
 Ülesanne 0104
-
-Kuvada kahe FOR tsükkliga välja järgmine arvude jada järgmisel kujul: 
-
+Kuvada kahe FOR tsükkliga välja järgmine arvude jada järgmisel kujul:
 1,0
 1,1
 1,2
@@ -81,12 +68,9 @@ Kuvada kahe FOR tsükkliga välja järgmine arvude jada järgmisel kujul:
 ... jne kuni
 9,9
 
-
 ================================
 Ülesanne 0105
-
 Kuvada kahe FOR tsükkliga välja järgmine arvude jada järgmisel kujul:
-
 10,-10
 10,-9
 10,-8

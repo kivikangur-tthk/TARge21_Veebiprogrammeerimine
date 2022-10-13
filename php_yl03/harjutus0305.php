@@ -1,8 +1,6 @@
 <pre>
 Ülesanne 0305
-
 Teha funktsioon nimega "string_info". Funktsiooni sisendargumendiks olgu teksti string ($string). Funktsioon üleb: ,
-
 1. Mis on selle stringi esimene täht ja viimane täht. Funkts. "strlen" leiab stringi pikkuse ja "echo $string[0]" kuvab esimese tähe.
 2. Mitu tähte stringis on (strlen).
 3. Kogu string tehaks läbiva väiketähega (strtolower) ja väljastatakse.
@@ -10,7 +8,6 @@ Teha funktsioon nimega "string_info". Funktsiooni sisendargumendiks olgu teksti 
 5. Tsükliga loetakse kokku ja kuvatakse ekraanile mitu "a" tähte stringis esineb.
 </pre>
 <?php
-
 function string_info($string)
 {
     $result["firstLetter"] = $string[0];
@@ -27,15 +24,9 @@ function string_info($string)
     $result["a_count"] = $charCount;
     return $result;
 }
-
 echo "<pre>";
 var_dump(string_info("jaanalinnud"));
 echo "</pre>";
-
-
-
-
-
 
 
 

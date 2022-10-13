@@ -1,7 +1,6 @@
 <pre>
 Ülesanne 0404
 
-
 Tee vorm &lt;form&gt; tagiga kangelase andmete sisestamiseks. Pange kogu vorm ka tabelisse. Paigutage lahtrite kirjelduse esimesse veergu ja lahtrid teise veergu.
 Nimi (&lt;input type=text&gt;)
 Klass (&lt;select&gt;, &lt;options&gt;)

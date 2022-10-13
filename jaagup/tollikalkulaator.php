@@ -24,6 +24,5 @@ if (empty($_REQUEST["sentimeetrid"])) {
     echo $_REQUEST["sentimeetrid"] . " cm on " . ($_REQUEST["sentimeetrid"] / 2.54) . " tolli.";
 }
 ?>
-
 </body>
 </html>

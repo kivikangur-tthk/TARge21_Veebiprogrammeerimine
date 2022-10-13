@@ -10,7 +10,6 @@
 <body>
 <pre>
 Ülesanne 0401
-
 Tee massiiv kuhu pane järgmised andmed:
 Nimi, aadress, pildi nimi (nt. vello.jpg), kodulehekülg (nt. aare.edu.ee)
 Pilt salvesta ülesande kataloogi.
@@ -27,7 +26,5 @@ $data = array("name" => "Kristjan", "address" => "Sõpruse pst 181", "image_url"
 <i>Aadress: <?= $data["address"] ?></i><br>
 <img src='<?= $data["image_url"] ?>' alt='<?= $data["name"] ?>'><br>
 Koduleht:<a href='<?= $data["homepage"] ?>'><?= $data["name"] ?></a><br>
-
 </body>
 </html>
-
