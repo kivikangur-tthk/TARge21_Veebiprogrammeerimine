@@ -1,5 +1,5 @@
 <?php
-require("/../dbConfig.php");
+require("dbConfig.php"); // hoida väljaspool veebist kättesaadavat teekonda
 if (isset($user) && (isset($server)) && (isset($password)) && (isset($database))) {
     $yhendus = new mysqli($server, $user, $password, $database);
 }
