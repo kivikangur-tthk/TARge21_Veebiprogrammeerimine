@@ -1,5 +1,5 @@
 <?php
-$yhendus = new mysqli("localhost", "tunniplaan", "bh4r0opSfgOlaTdO", "tunniplaan");
+$yhendus = new mysqli("localhost", "tunniplaan", "bh4r0opSfgOlaTdO", "tunniplaan"); // VÄGA PAHA - parool on veebist kättesaadav ja versioonihalduses
 $kask = $yhendus->prepare("SELECT id, kassinimi, toon FROM kassid");
 $kask->bind_result($id, $nimi, $toon);
 $kask->execute();
