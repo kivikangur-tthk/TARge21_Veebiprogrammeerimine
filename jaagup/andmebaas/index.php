@@ -1,9 +1,19 @@
 <?php
 require("dbConfig.php"); // hoida väljaspool veebist kättesaadavat teekonda
-if (isset($user) && (isset($server)) && (isset($password)) && (isset($database))) {
-    $yhendus = new mysqli($server, $user, $password, $database);
+global $yhendus;
+if (isset($_REQUEST["uusleht"])) {
+    $kask = $yhendus->prepare("INSERT INTO lehed (pealkiri, sisu) VALUES (?, ?)");
+    $kask->bind_param("ss", $_REQUEST["pealkiri"], $_REQUEST["sisu"]);
+    $kask->execute();
+    header("Location: $_SERVER[PHP_SELF]");
+    $yhendus->close();
+    exit();
 }
-?>
+if (isset($_REQUEST["kustutusid"])) {
+    $kask = $yhendus->prepare("DELETE FROM lehed WHERE id=?");
+    $kask->bind_param("i", $_REQUEST["kustutusid"]);
+    $kask->execute();
+} ?>
 <!doctype html>
 <html>
 <head>
@@ -17,7 +27,6 @@ if (isset($user) && (isset($server)) && (isset($password)) && (isset($database))
         #sisukiht {
             float: left;
         }
-
         #jalusekiht {
             clear: left;
         }
@@ -38,6 +47,7 @@ if (isset($user) && (isset($server)) && (isset($password)) && (isset($database))
         }
         ?>
     </ul>
+    <a href='?lisamine=jah'>Lisa ...</a>
 </div>
 <div id="sisukiht">
     <?php
@@ -53,16 +63,36 @@ if (isset($user) && (isset($server)) && (isset($password)) && (isset($database))
         if ($kask->fetch()) {
             echo "<h2>" . htmlspecialchars($pealkiri) . "</h2>";
             echo htmlspecialchars($sisu);
+            echo "<br /><a href='?kustutusid=$id'>kustuta</a>";
         } else {
             echo "Vigased andmed.";
         }
     } else {
         echo "Tere tulemast avalehele! Vali men&uuml;&uuml;st sobiv teema.";
     }
+    if (isset($_REQUEST["lisamine"])) {
+        ?>
+        <form action='?'>
+            <input type="hidden" name="uusleht" value="jah"/>
+            <h2>Uue teate lisamine</h2>
+            <dl>
+                <dt>Pealkiri:</dt>
+                <dd>
+                    <input type="text" name="pealkiri"/>
+                </dd>
+                <dt>Teate sisu:</dt>
+                <dd>
+                    <textarea rows="20" name="sisu"></textarea>
+                </dd>
+            </dl>
+            <input type="submit" value="sisesta">
+        </form>
+        <?php
+    }
     ?>
 </div>
 <div id="jalusekiht">
-    Lehe tegi Jaagup
+    Lehe tegi Kristjan
 </div>
 </body>
 </html>
