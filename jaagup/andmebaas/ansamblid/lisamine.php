@@ -15,8 +15,13 @@ if (!empty($_REQUEST["uuepealkiri"])) {
     <html lang="et">
     <head>
         <title>Ansambli lisamine</title>
+        <link rel="stylesheet" href="stiil.css" type="text/css"/>
     </head>
     <body>
+    <?php
+    //echo 'PHP version: ' . phpversion();
+    include("navigatsioon.php");
+    ?>
     <h1>Ansambel</h1>
     <form action="?">
         <label>Uue ansambli nimi:

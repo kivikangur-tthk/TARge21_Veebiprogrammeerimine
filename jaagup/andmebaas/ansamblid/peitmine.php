@@ -24,8 +24,13 @@ if (isset($_REQUEST["ava_bandid"])) {
     <html lang="et">
     <head>
         <title>Ansamblid</title>
+        <link rel="stylesheet" href="stiil.css" type="text/css"/>
     </head>
     <body>
+    <?php
+    //echo 'PHP version: ' . phpversion();
+    include("navigatsioon.php");
+    ?>
     <h1>Ansamblid</h1>
     <?php
     echo "<a href='?ava_bandid'>Ava</a> / ";
