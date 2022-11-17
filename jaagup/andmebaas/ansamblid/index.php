@@ -19,9 +19,14 @@ if (isset($_REQUEST["heaband_id"]) or
     <html lang="et">
     <head>
         <title>Ansamblid</title>
+        <link rel="stylesheet" href="stiil.css" type="text/css"/>
     </head>
     <body>
-    <?php //echo 'PHP version: ' . phpversion(); ?>
+    <?php
+    //echo 'PHP version: ' . phpversion();
+    include("navigatsioon.php");
+    ?>
+
     <h1>Ansamblid</h1>
     <table>
         <?php
