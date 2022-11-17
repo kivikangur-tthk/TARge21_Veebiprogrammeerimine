@@ -1,5 +1,4 @@
 <?php
-require("../dbConfig.php");
 global $yhendus;
 if (isset($_REQUEST["peitmise_id"])) {
     $kask = $yhendus->prepare("UPDATE ansamblid SET avalik=0 WHERE id=?");
@@ -20,17 +19,6 @@ if (isset($_REQUEST["ava_bandid"])) {
     $kask->execute();
 }
 ?>
-    <!doctype html>
-    <html lang="et">
-    <head>
-        <title>Ansamblid</title>
-        <link rel="stylesheet" href="stiil.css" type="text/css"/>
-    </head>
-    <body>
-    <?php
-    //echo 'PHP version: ' . phpversion();
-    include("navigatsioon.php");
-    ?>
     <h1>Ansamblid</h1>
     <?php
     echo "<a href='?ava_bandid'>Ava</a> / ";
@@ -60,8 +48,3 @@ if (isset($_REQUEST["ava_bandid"])) {
         }
         ?>
     </table>
-    </body>
-    </html>
-<?php
-$yhendus->close();
-?>
